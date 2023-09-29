@@ -8,7 +8,7 @@ const Navbar = () => {
     setShowLogo(!showLogo);
   };
   return (
-    <div className="flex justify-between items-center h-20 px-4">
+    <div className="flex w-full justify-between items-center h-20 px-4 text-white absolute z-10">
       <div>
         <h1 className={showLogo ? "block" : "hidden"}>BEACHES</h1>
       </div>
@@ -23,10 +23,13 @@ const Navbar = () => {
       {/**  -- profile menu icon */}
       <div className="hidden md:flex gap-2">
         <div className="w-[50] h-[50] text-headingColor">
-          <i className="ri-account-circle-line ri-xl"></i>
+          <i
+            className="ri-account-circle-line ri-xl"
+            style={{ color: "white" }}
+          ></i>
         </div>
         <div className="w-[50] h-[50] text-headingColor">
-          <i className="ri-search-line ri-xl"></i>
+          <i className="ri-search-line ri-xl" style={{ color: "white" }}></i>
         </div>
       </div>
       {/** ----- end profile icon  */}
@@ -35,7 +38,7 @@ const Navbar = () => {
         {showNav ? (
           <i className="ri-close-circle-fill ri-3x"></i>
         ) : (
-          <i className="ri-menu-line ri-xl"></i>
+          <i className="ri-menu-line ri-xl" style={{ color: "white" }}></i>
         )}
       </div>
       {/**  end hamberger menu  */}
@@ -49,7 +52,7 @@ const Navbar = () => {
             : "absolute left-[-100%]"
         }
       >
-        <ul className="relative ">
+        <ul className="relative text-black">
           <h1>BEACHES</h1>
           <li>Home</li>
           <li>Destination</li>

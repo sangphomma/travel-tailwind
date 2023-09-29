@@ -16,7 +16,7 @@ i {
     @apply font-[Poppins];
   }
   li {
-    @apply p-4 text-xl border-b-2;
+    @apply p-4 text-xl;
   }
   h1 {
     @apply text-3xl md:text-4xl font-[700];
