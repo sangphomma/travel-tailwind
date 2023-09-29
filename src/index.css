@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-[Poppins];
+  }
+  li {
+    @apply p-4;
+  }
+  h1 {
+    @apply text-3xl md:text-4xl font-[700];
+  }
+  h2 {
+    @apply text-3xl font-[700];
+  }
+  h3 {
+    @apply text-xl font-[700];
+  }
+}
